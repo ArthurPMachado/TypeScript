@@ -35,3 +35,8 @@ var Cor;
 })(Cor || (Cor = {}));
 var minhaCor = Cor.Verde;
 console.log(minhaCor);
+// any
+var carro = 'BMW';
+console.log(carro);
+carro = { marca: 'BMW', ano: 2019 };
+console.log(carro);
