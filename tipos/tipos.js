@@ -15,3 +15,7 @@ minhaIdade = 27;
 console.log(typeof minhaIdade);
 // minhaIdade = 'idade é 27';
 // console.log(typeof minhaIdade);
+// array
+var hobbies = ["Cozinhar", "Praticar Esportes"];
+console.log(typeof hobbies);
+hobbies = [100];
