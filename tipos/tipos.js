@@ -23,3 +23,15 @@ hobbies = [100];
 var endereco = ["Av Principal", 99, ""];
 console.log(endereco);
 endereco = ["Rua Importante", 1260, "Bloco C"];
+// enums
+var Cor;
+(function (Cor) {
+    Cor[Cor["Cinza"] = 0] = "Cinza";
+    Cor[Cor["Verde"] = 100] = "Verde";
+    Cor[Cor["Azul"] = 10] = "Azul";
+    Cor[Cor["Laranja"] = 11] = "Laranja";
+    Cor[Cor["Amarelo"] = 12] = "Amarelo";
+    Cor[Cor["Vermelho"] = 100] = "Vermelho";
+})(Cor || (Cor = {}));
+var minhaCor = Cor.Verde;
+console.log(minhaCor);
