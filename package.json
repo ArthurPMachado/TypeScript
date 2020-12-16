@@ -1,0 +1,23 @@
+{
+  "name": "Typescript",
+  "version": "1.0.0",
+  "description": "Repositório para explorar a ferramente TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurPMachado/TypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurPMachado/TypeScript/issues"
+  },
+  "homepage": "https://github.com/ArthurPMachado/TypeScript#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
