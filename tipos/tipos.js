@@ -19,3 +19,7 @@ console.log(typeof minhaIdade);
 var hobbies = ["Cozinhar", "Praticar Esportes"];
 console.log(typeof hobbies);
 hobbies = [100];
+// tuplas
+var endereco = ["Av Principal", 99, ""];
+console.log(endereco);
+endereco = ["Rua Importante", 1260, "Bloco C"];
