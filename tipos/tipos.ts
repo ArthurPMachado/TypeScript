@@ -76,3 +76,18 @@ let calculo: (numero1: number, numero2: number) => number;
 
 calculo = multiplicar;
 console.log(calculo(5, 6));
+
+// objetos
+let usuario: { nome: string, idade: number } = {
+  nome: 'João',
+  idade: 27
+}
+
+console.log(usuario);
+
+usuario = {
+  idade: 31,
+  nome: 'Maria'
+}
+
+console.log(usuario);
