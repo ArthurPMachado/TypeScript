@@ -53,3 +53,9 @@ function multiplicar(numero1, numero2) {
     return numero1 * numero2;
 }
 console.log(multiplicar(2, 5));
+// tipo funcao
+var calculo;
+// calculo = digaOi;
+// calculo();
+calculo = multiplicar;
+console.log(calculo(5, 6));

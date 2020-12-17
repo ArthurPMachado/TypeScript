@@ -68,3 +68,11 @@ function multiplicar(numero1: number, numero2: number): number {
 }
 
 console.log(multiplicar(2, 5));
+
+// tipo funcao
+let calculo: (numero1: number, numero2: number) => number;
+// calculo = digaOi;
+// calculo();
+
+calculo = multiplicar;
+console.log(calculo(5, 6));
