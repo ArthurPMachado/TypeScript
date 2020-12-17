@@ -40,3 +40,16 @@ var carro = 'BMW';
 console.log(carro);
 carro = { marca: 'BMW', ano: 2019 };
 console.log(carro);
+// funcoes
+function retornaNome() {
+    return nome;
+}
+console.log(retornaNome());
+function digaOi() {
+    console.log('Oi');
+}
+digaOi();
+function multiplicar(numero1, numero2) {
+    return numero1 * numero2;
+}
+console.log(multiplicar(2, 5));
