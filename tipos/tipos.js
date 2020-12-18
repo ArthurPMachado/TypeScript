@@ -113,3 +113,15 @@ var produto = {
     }
 };
 produto.validarProduto();
+var altura = 12;
+// altura = null;
+var alturaOpcional = 12;
+alturaOpcional = null;
+var contato1 = {
+    nome: 'Jilmar',
+    tel1: '98765432',
+    tel2: null,
+};
+var podeSerNulo = null;
+podeSerNulo = 12;
+podeSerNulo = 'abc';
