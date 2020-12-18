@@ -84,3 +84,10 @@ var funcionario = {
     baterPonto: baterPonto
 };
 console.log(funcionario.baterPonto(10));
+var funcionario2 = {
+    nome: 'Gabriela',
+    idade: 24,
+    supervisores: ['Bia', 'Ronaldo'],
+    cargo: 'Analista de Marketing',
+    baterPonto: baterPonto
+};

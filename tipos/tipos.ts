@@ -101,7 +101,15 @@ function baterPonto (hora: number): string {
   return "Fora do horário";
 }
 
-const funcionario: { nome: string, idade: number, supervisores: string[], cargo: string, baterPonto: (hora: number) => string } = {
+type Funcionario = {
+  nome: string, 
+  idade: number, 
+  supervisores: string[], 
+  cargo: string, 
+  baterPonto: (hora: number) => string 
+}
+
+const funcionario: Funcionario = {
   nome: 'Alberto',
   idade: 37,
   supervisores: ['Romildo', 'Carlos', 'Roberto'],
@@ -110,3 +118,11 @@ const funcionario: { nome: string, idade: number, supervisores: string[], cargo:
 };
 
 console.log(funcionario.baterPonto(10));
+
+const funcionario2: Funcionario = {
+  nome: 'Gabriela',
+  idade: 24,
+  supervisores: ['Bia', 'Ronaldo'],
+  cargo: 'Analista de Marketing',
+  baterPonto
+};
