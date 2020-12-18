@@ -91,3 +91,22 @@ usuario = {
 }
 
 console.log(usuario);
+
+
+function baterPonto (hora: number): string {
+  if (hora <= 8) {
+    return "Ponto Normal";
+  }
+
+  return "Fora do horário";
+}
+
+const funcionario: { nome: string, idade: number, supervisores: string[], cargo: string, baterPonto: (hora: number) => string } = {
+  nome: 'Alberto',
+  idade: 37,
+  supervisores: ['Romildo', 'Carlos', 'Roberto'],
+  cargo: 'Analista de Cloud',
+  baterPonto
+};
+
+console.log(funcionario.baterPonto(10));

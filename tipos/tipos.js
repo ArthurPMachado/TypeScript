@@ -70,3 +70,17 @@ usuario = {
     nome: 'Maria'
 };
 console.log(usuario);
+function baterPonto(hora) {
+    if (hora <= 8) {
+        return "Ponto Normal";
+    }
+    return "Fora do horário";
+}
+var funcionario = {
+    nome: 'Alberto',
+    idade: 37,
+    supervisores: ['Romildo', 'Carlos', 'Roberto'],
+    cargo: 'Analista de Cloud',
+    baterPonto: baterPonto
+};
+console.log(funcionario.baterPonto(10));
