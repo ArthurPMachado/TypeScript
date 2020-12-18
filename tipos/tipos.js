@@ -96,3 +96,20 @@ var nota = 10;
 console.log("Minha nota \u00E9 " + nota);
 nota = '10';
 console.log("Minha nota \u00E9 " + nota);
+// Never
+function falha(message) {
+    throw new Error(message);
+}
+var produto = {
+    nome: 'Sabão',
+    preco: 1,
+    validarProduto: function () {
+        if (!this.nome || this.nome.trim().length === 0) {
+            falha('Precisa ter um nome');
+        }
+        if (this.preco <= 0) {
+            falha('Preço inválido');
+        }
+    }
+};
+produto.validarProduto();
