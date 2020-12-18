@@ -91,3 +91,8 @@ var funcionario2 = {
     cargo: 'Analista de Marketing',
     baterPonto: baterPonto
 };
+// Union Types
+var nota = 10;
+console.log("Minha nota \u00E9 " + nota);
+nota = '10';
+console.log("Minha nota \u00E9 " + nota);

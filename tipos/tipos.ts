@@ -101,6 +101,7 @@ function baterPonto (hora: number): string {
   return "Fora do horário";
 }
 
+// Alias
 type Funcionario = {
   nome: string, 
   idade: number, 
@@ -126,3 +127,10 @@ const funcionario2: Funcionario = {
   cargo: 'Analista de Marketing',
   baterPonto
 };
+
+// Union Types
+let nota: number | string = 10;
+console.log(`Minha nota é ${nota}`);
+
+nota = '10';
+console.log(`Minha nota é ${nota}`);
