@@ -13,3 +13,14 @@ function soma(a: any, b: any) {
 let qualquerCoisa;
 qualquerCoisa = 12;
 qualquerCoisa = 'abc';
+
+function saudar(isManha: boolean, horas: number): string {
+  let a = 1;
+  let saudacao: string;
+  if(isManha) {
+    saudacao = 'Bom Dia!';
+  } else {
+    saudacao = 'Boa Tarde';
+  }
+  return saudacao;
+}
