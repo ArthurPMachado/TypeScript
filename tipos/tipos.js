@@ -125,3 +125,4 @@ var contato1 = {
 var podeSerNulo = null;
 podeSerNulo = 12;
 podeSerNulo = 'abc';
+//# sourceMappingURL=tipos.js.map
