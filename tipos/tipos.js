@@ -1,26 +1,26 @@
 "use strict";
 // string
-var nome = 'João';
+const nome = 'João';
 console.log(nome);
 // numbers
-var idade = 27;
+let idade = 27;
 idade = 27.5;
 console.log(idade);
 // boolean
-var possuiHobbies = false;
+const possuiHobbies = false;
 console.log(possuiHobbies);
 // tipos explicitos
-var minhaIdade;
+let minhaIdade;
 minhaIdade = 27;
 console.log(typeof minhaIdade);
 // minhaIdade = 'idade é 27';
 // console.log(typeof minhaIdade);
 // array
-var hobbies = ["Cozinhar", "Praticar Esportes"];
+let hobbies = ["Cozinhar", "Praticar Esportes"];
 console.log(typeof hobbies);
 hobbies = [100];
 // tuplas
-var endereco = ["Av Principal", 99, ""];
+let endereco = ["Av Principal", 99, ""];
 console.log(endereco);
 endereco = ["Rua Importante", 1260, "Bloco C"];
 // enums
@@ -33,10 +33,10 @@ var Cor;
     Cor[Cor["Amarelo"] = 12] = "Amarelo";
     Cor[Cor["Vermelho"] = 100] = "Vermelho";
 })(Cor || (Cor = {}));
-var minhaCor = Cor.Verde;
+let minhaCor = Cor.Verde;
 console.log(minhaCor);
 // any
-var carro = 'BMW';
+let carro = 'BMW';
 console.log(carro);
 carro = { marca: 'BMW', ano: 2019 };
 console.log(carro);
@@ -54,13 +54,13 @@ function multiplicar(numero1, numero2) {
 }
 console.log(multiplicar(2, 5));
 // tipo funcao
-var calculo;
+let calculo;
 // calculo = digaOi;
 // calculo();
 calculo = multiplicar;
 console.log(calculo(5, 6));
 // objetos
-var usuario = {
+let usuario = {
     nome: 'João',
     idade: 27
 };
@@ -76,34 +76,34 @@ function baterPonto(hora) {
     }
     return "Fora do horário";
 }
-var funcionario = {
+const funcionario = {
     nome: 'Alberto',
     idade: 37,
     supervisores: ['Romildo', 'Carlos', 'Roberto'],
     cargo: 'Analista de Cloud',
-    baterPonto: baterPonto
+    baterPonto
 };
 console.log(funcionario.baterPonto(10));
-var funcionario2 = {
+const funcionario2 = {
     nome: 'Gabriela',
     idade: 24,
     supervisores: ['Bia', 'Ronaldo'],
     cargo: 'Analista de Marketing',
-    baterPonto: baterPonto
+    baterPonto
 };
 // Union Types
-var nota = 10;
-console.log("Minha nota \u00E9 " + nota);
+let nota = 10;
+console.log(`Minha nota é ${nota}`);
 nota = '10';
-console.log("Minha nota \u00E9 " + nota);
+console.log(`Minha nota é ${nota}`);
 // Never
 function falha(message) {
     throw new Error(message);
 }
-var produto = {
+const produto = {
     nome: 'Sabão',
     preco: 1,
-    validarProduto: function () {
+    validarProduto() {
         if (!this.nome || this.nome.trim().length === 0) {
             falha('Precisa ter um nome');
         }
@@ -113,16 +113,16 @@ var produto = {
     }
 };
 produto.validarProduto();
-var altura = 12;
+let altura = 12;
 // altura = null;
-var alturaOpcional = 12;
+let alturaOpcional = 12;
 alturaOpcional = null;
-var contato1 = {
+const contato1 = {
     nome: 'Jilmar',
     tel1: '98765432',
     tel2: null,
 };
-var podeSerNulo = null;
+let podeSerNulo = null;
 podeSerNulo = 12;
 podeSerNulo = 'abc';
 //# sourceMappingURL=tipos.js.map

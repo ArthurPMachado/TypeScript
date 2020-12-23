@@ -14,8 +14,7 @@ let qualquerCoisa;
 qualquerCoisa = 12;
 qualquerCoisa = 'abc';
 
-function saudar(isManha: boolean, horas: number): string {
-  let a = 1;
+function saudar(isManha: boolean): string {
   let saudacao: string;
   if(isManha) {
     saudacao = 'Bom Dia!';
