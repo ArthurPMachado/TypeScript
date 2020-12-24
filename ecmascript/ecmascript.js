@@ -19,4 +19,12 @@ const subtrair = (n1, n2) => n1 - n2;
 console.log(subtrair(1, 1));
 const saudacao = () => console.log("Olá");
 saudacao();
+// this
+function normalComThis() {
+    console.log(this);
+}
+const normalComThisEspecial = normalComThis.bind(2);
+normalComThisEspecial();
+const arrowComThis = () => console.log(this);
+arrowComThis();
 //# sourceMappingURL=ecmascript.js.map
