@@ -37,3 +37,15 @@ normalComThisEspecial();
 
 const arrowComThis = () => console.log(this);
 arrowComThis();
+
+// Parametros padrao
+function contagemRegressiva(inicio: number = 3): void {
+  console.log(inicio);
+  while (inicio > 0) {
+    inicio--;
+    console.log(inicio);
+  }
+  console.log("Fim");
+}
+
+contagemRegressiva();

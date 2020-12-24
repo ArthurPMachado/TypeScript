@@ -27,4 +27,14 @@ const normalComThisEspecial = normalComThis.bind(2);
 normalComThisEspecial();
 const arrowComThis = () => console.log(this);
 arrowComThis();
+// Parametros padrao
+function contagemRegressiva(inicio = 3) {
+    console.log(inicio);
+    while (inicio > 0) {
+        inicio--;
+        console.log(inicio);
+    }
+    console.log("Fim");
+}
+contagemRegressiva();
 //# sourceMappingURL=ecmascript.js.map
