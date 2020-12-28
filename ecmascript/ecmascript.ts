@@ -49,3 +49,12 @@ function contagemRegressiva(inicio: number = 3): void {
 }
 
 contagemRegressiva();
+
+// Rest & Spread
+const numbers = [1, 10, 99, -5, 220, 765];
+console.log(Math.max(...numbers));
+
+const turmaA: string[] = ['João', 'Maria', 'Fernanda'];
+const turmaB: string[] = ['Gabriel', ...turmaA, 'Miguel', 'Lorena'];
+
+console.log(turmaB);
