@@ -49,4 +49,14 @@ function retornarArray(...numbers) {
 const numeros = retornarArray(1, 2, 76, 365, 54);
 console.log(numeros);
 console.log(retornarArray(...numbers));
+// Rest & Spread (Tupla)
+const tupla = [1, 'abc', false];
+function tuplaParam1(number, text, validate) {
+    console.log(`1) ${number} ${text} ${validate}`);
+}
+tuplaParam1(...tupla);
+function tuplaParam2(...params) {
+    console.log(`2) ${params[0]} ${params[1]} ${params[2]}`);
+}
+tuplaParam2(...tupla);
 //# sourceMappingURL=ecmascript.js.map
