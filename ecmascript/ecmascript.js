@@ -43,4 +43,10 @@ console.log(Math.max(...numbers));
 const turmaA = ['João', 'Maria', 'Fernanda'];
 const turmaB = ['Gabriel', ...turmaA, 'Miguel', 'Lorena'];
 console.log(turmaB);
+function retornarArray(...numbers) {
+    return numbers;
+}
+const numeros = retornarArray(1, 2, 76, 365, 54);
+console.log(numeros);
+console.log(retornarArray(...numbers));
 //# sourceMappingURL=ecmascript.js.map

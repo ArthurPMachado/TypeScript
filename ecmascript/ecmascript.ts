@@ -58,3 +58,11 @@ const turmaA: string[] = ['João', 'Maria', 'Fernanda'];
 const turmaB: string[] = ['Gabriel', ...turmaA, 'Miguel', 'Lorena'];
 
 console.log(turmaB);
+
+function retornarArray(...numbers: number[]): number[] {
+  return numbers;
+}
+
+const numeros = retornarArray(1, 2, 76, 365, 54);
+console.log(numeros);
+console.log(retornarArray(...numbers));
