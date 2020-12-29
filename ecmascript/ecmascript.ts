@@ -103,3 +103,9 @@ const item = {
 const { nome: n, preco } = item;
 console.log(n);
 console.log(preco);
+
+// Template String
+const usuarioID: string = 'SuporteCod3r';
+const notificacoes: string = '9';
+const boasVindas = `Boas vindas ${usuarioID}, notificações: ${notificacoes}`;
+console.log(boasVindas);

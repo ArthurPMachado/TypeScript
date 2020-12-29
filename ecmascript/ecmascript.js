@@ -76,4 +76,9 @@ const item = {
 const { nome: n, preco } = item;
 console.log(n);
 console.log(preco);
+// Template String
+const usuarioID = 'SuporteCod3r';
+const notificacoes = '9';
+const boasVindas = `Boas vindas ${usuarioID}, notificações: ${notificacoes}`;
+console.log(boasVindas);
 //# sourceMappingURL=ecmascript.js.map
