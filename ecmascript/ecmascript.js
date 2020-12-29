@@ -81,4 +81,27 @@ const usuarioID = 'SuporteCod3r';
 const notificacoes = '9';
 const boasVindas = `Boas vindas ${usuarioID}, notificações: ${notificacoes}`;
 console.log(boasVindas);
+// Callback
+// function esperar3s(callback: (dado: string) => void) {
+//   setTimeout(() => {
+//     callback('3s depois...');
+//   }, 3000);
+// }
+// esperar3s(function(resultado) {
+//   console.log(resultado);
+// });
+// function esperar3sPromise() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('3s depois promise...');
+//     }, 3000);
+//   });
+// }
+// esperar3sPromise().then(dado => console.log(dado));
+fetch('https://swapi.dev/api/people/1/')
+    .then(response => response.json())
+    .then(personagem => personagem.films)
+    .then(films => fetch(films[0]))
+    .then(responseFilms => responseFilms.json())
+    .then(filme => console.log(filme.title));
 //# sourceMappingURL=ecmascript.js.map
