@@ -66,4 +66,14 @@ const caracteristicas = ['Motor Zetec 1.8', 2020];
 const [motor, ano] = caracteristicas;
 console.log(motor);
 console.log(ano);
+// Destructuring (object)
+const item = {
+    nome: 'SSD 480GB',
+    preco: 200
+};
+// const nomeItem = item.nome;
+// const preco = item.preco;
+const { nome: n, preco } = item;
+console.log(n);
+console.log(preco);
 //# sourceMappingURL=ecmascript.js.map
