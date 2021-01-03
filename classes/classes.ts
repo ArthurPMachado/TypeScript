@@ -19,3 +19,18 @@ console.log(aniversario);
 const casamento = new Data; // pode omitir os "()"
 casamento.ano = 2017;
 console.log(casamento);
+class DataEnxuta {
+  constructor(public dia: number = 1, public mes: number = 1, 
+    public ano: number = 1970) {
+    
+  }
+}
+
+const aniversarioEnxuto = new DataEnxuta(3, 11, 1991);
+aniversarioEnxuto.dia = 4;
+console.log(aniversarioEnxuto.dia);
+console.log(aniversarioEnxuto);
+
+const casamentoEnxuto = new DataEnxuta; // pode omitir os "()"
+casamentoEnxuto.ano = 2017;
+console.log(casamentoEnxuto);
