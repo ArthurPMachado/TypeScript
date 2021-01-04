@@ -73,4 +73,16 @@ class Carro {
 const carro1 = new Carro('Ford', 'Ka', 185);
 console.log(carro1.acelerar());
 console.log(carro1.frear());
+class Ferrari extends Carro {
+    acelerar() {
+        return this.alterarVelocidade(20);
+    }
+    frear() {
+        return this.alterarVelocidade(-15);
+    }
+}
+const f40 = new Ferrari('Ferrari', 'F40', 330);
+console.log(`${f40.marca} ${f40.modelo}`);
+console.log(f40.acelerar());
+console.log(f40.frear());
 //# sourceMappingURL=classes.js.map
