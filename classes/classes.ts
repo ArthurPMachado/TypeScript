@@ -41,15 +41,22 @@ class Produto {
     
   }
 
-  aplicarDesconto() {
+  public resumo(): string {
+    return `${this.nome} custa ${this.preco} (${this.desconto * 100}% off)`
+  }
+
+  aplicarDesconto(): string {
     if(this.desconto > 0) {
       this.preco = this.preco - (this.preco * this.desconto);
+      return this.resumo();
     }
+
+    return this.resumo();
   }
 }
 
 const produtoSemDesconto = new Produto("Sofá", 999.99);
-console.log(produtoSemDesconto);
+console.log(produtoSemDesconto.aplicarDesconto());
+
 const produtoComDesconto = new Produto("Televisão", 1599.99, 0.15);
-produtoSemDesconto.aplicarDesconto();
-console.log(produtoComDesconto);
+console.log(produtoComDesconto.aplicarDesconto());
