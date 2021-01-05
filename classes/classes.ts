@@ -141,7 +141,7 @@ class Matematica {
   static PI: number = 3.1416;
 
   static areaCirc(raio: number): number {
-    return this.PI * raio * raio;
+    return Matematica.PI * raio * raio;
   }
 }
 
@@ -180,3 +180,22 @@ console.log(c1.getResultado());
 c1 = new Subtracao();
 c1.executar(2, 3, 4, 5);
 console.log(c1.getResultado());
+
+
+class Unico {
+  private static instancia: Unico = new Unico;
+
+  private constructor() {}
+
+  static getInstance(): Unico {
+    return Unico.instancia;
+  }
+
+  agora() {
+    return new Date;
+  }
+}
+
+// const errado = new Unico();
+
+console.log(Unico.getInstance().agora());

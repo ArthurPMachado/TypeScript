@@ -110,7 +110,7 @@ console.log(pessoa1);
 // Atributos e metodos estaticos
 class Matematica {
     static areaCirc(raio) {
-        return this.PI * raio * raio;
+        return Matematica.PI * raio * raio;
     }
 }
 Matematica.PI = 3.1416;
@@ -143,4 +143,16 @@ console.log(c1.getResultado());
 c1 = new Subtracao();
 c1.executar(2, 3, 4, 5);
 console.log(c1.getResultado());
+class Unico {
+    constructor() { }
+    static getInstance() {
+        return Unico.instancia;
+    }
+    agora() {
+        return new Date;
+    }
+}
+Unico.instancia = new Unico;
+// const errado = new Unico();
+console.log(Unico.getInstance().agora());
 //# sourceMappingURL=classes.js.map
