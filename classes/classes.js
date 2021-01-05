@@ -118,4 +118,29 @@ Matematica.PI = 3.1416;
 // m1.PI = 4.2;
 // console.log(m1.areaCirc(4));
 console.log(Matematica.areaCirc(4));
+// Classe abstrata
+class Calculo {
+    constructor() {
+        this.resultado = 0;
+    }
+    getResultado() {
+        return this.resultado;
+    }
+}
+class Soma extends Calculo {
+    executar(...numeros) {
+        this.resultado = numeros.reduce((total, next) => total + next);
+    }
+}
+class Subtracao extends Calculo {
+    executar(...numeros) {
+        this.resultado = numeros.reduce((total, next) => total - next);
+    }
+}
+let c1 = new Soma();
+c1.executar(2, 3, 4, 5);
+console.log(c1.getResultado());
+c1 = new Subtracao();
+c1.executar(2, 3, 4, 5);
+console.log(c1.getResultado());
 //# sourceMappingURL=classes.js.map
