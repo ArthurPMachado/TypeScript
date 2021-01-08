@@ -41,3 +41,18 @@ meuCliente.nome = 'Lucas';
 saudarComOla(meuCliente);
 meuCliente.saudar('Oliveira');
 console.log(meuCliente.ultimaCompra);
+
+// Interface Função
+interface FuncaoCalculo {
+  (a: number, b: number): number
+}
+
+let potencia: FuncaoCalculo;
+
+potencia = function(base: number, expoente: number): number {
+  // Array(expoente).fill(base).reduce((total, next) => total * next);
+  // Math.pow(base, expoente);
+  return base ** expoente;
+}
+
+console.log(potencia(2, 8));

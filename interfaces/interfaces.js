@@ -33,4 +33,11 @@ meuCliente.nome = 'Lucas';
 saudarComOla(meuCliente);
 meuCliente.saudar('Oliveira');
 console.log(meuCliente.ultimaCompra);
+let potencia;
+potencia = function (base, expoente) {
+    // Array(expoente).fill(base).reduce((total, next) => total * next);
+    // Math.pow(base, expoente);
+    return Math.pow(base, expoente);
+};
+console.log(potencia(2, 8));
 //# sourceMappingURL=interfaces.js.map
