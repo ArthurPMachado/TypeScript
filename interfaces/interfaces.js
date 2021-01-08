@@ -40,4 +40,23 @@ potencia = function (base, expoente) {
     return Math.pow(base, expoente);
 };
 console.log(potencia(2, 8));
+class RealA {
+    a() { }
+}
+class RealAB {
+    a() { }
+    b() { }
+}
+class RealABC {
+    a() { }
+    b() { }
+    c() { }
+}
+function teste(b) {
+}
+teste(new RealABC);
+class AbstrataABD {
+    a() { }
+    b() { }
+}
 //# sourceMappingURL=interfaces.js.map
