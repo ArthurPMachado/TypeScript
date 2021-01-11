@@ -91,7 +91,7 @@ const d2 = new Data(2, 4, 2015);
 console.log((new DiferencaEntreDatas(d1, d2).executar()));
 
 
-class Fila<T> {
+class Fila<T extends number | string> {
   private fila: Array<T>
 
   constructor(...args: T[]) {
