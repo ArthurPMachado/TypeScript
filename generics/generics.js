@@ -53,4 +53,43 @@ class SomaBinaria extends OperacaoBinaria {
 }
 console.log(new SomaBinaria(3, 4).executar());
 console.log(new SomaBinaria(30, 40).executar());
+class DiferencaEntreDatas extends OperacaoBinaria {
+    getTime(data) {
+        let { dia, mes, ano } = data;
+        return new Date(`${mes}/${dia}/${ano}`).getTime();
+    }
+    executar() {
+        const t1 = this.getTime(this.operando1);
+        const t2 = this.getTime(this.operando2);
+        const diferenca = Math.abs(t1 - t2);
+        const dia = 1000 * 60 * 60 * 24;
+        return `${Math.ceil(diferenca / dia)} dia(s)`;
+    }
+}
+const d1 = new Data(5, 2, 2020);
+const d2 = new Data(2, 4, 2015);
+console.log((new DiferencaEntreDatas(d1, d2).executar()));
+class Fila {
+    constructor(...args) {
+        this.fila = args;
+    }
+    entrar(elemento) {
+        this.fila.push(elemento);
+    }
+    proximo() {
+        const primeiro = this.fila[0];
+        this.fila.splice(0, 1);
+        return primeiro;
+    }
+    imprimir() {
+        console.log(this.fila);
+    }
+}
+const fila = new Fila('Gui', 'Pedro', 'Ana', 'Lu');
+fila.imprimir();
+fila.entrar('Carol');
+fila.imprimir();
+console.log(fila.proximo());
+console.log(fila.proximo());
+console.log(fila.proximo());
 //# sourceMappingURL=generics.js.map
