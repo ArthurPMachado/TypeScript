@@ -1,2 +1,2 @@
 # TypeScript
-Repositório para explorar a ferramente TypeScript
+Repositório para explorar a ferramenta TypeScript
